@@ -22,6 +22,8 @@ target 'MultiCraft' do
 	pod 'leveldb-library'
 	pod 'LuaJITPod', :git => 'https://github.com/MoNTE48/LuaJITPod'
 	pod 'libvorbis'
+	pod 'Bugsnag'
+	pod 'UITextView+Placeholder'
 
 	appodeal
 end

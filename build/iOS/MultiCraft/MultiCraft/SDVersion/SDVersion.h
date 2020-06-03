@@ -189,7 +189,7 @@ typedef NS_ENUM(NSInteger, DeviceVersion){
 	struct utsname systemInfo;
 	uname(&systemInfo);
 	NSString *code = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-	DeviceVersion version = (DeviceVersion)[[self.deviceNamesByCode objectForKey:code] integerValue];
+	DeviceVersion version = (DeviceVersion)[self.deviceNamesByCode[code] integerValue];
 	return version;
 }
 @end
